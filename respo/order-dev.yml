@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/caozhongying/SpringcloudConfig/
+          search-paths: respo
+          username: caozhongying
+          password: qq340827
+          basedir: F:\spring\configdemo\basedir
+      label: master
+server:
+  port: 8888
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
